@@ -10,7 +10,6 @@ namespace Employee_Management_System
             };
 
             List<Employee> employees = Employee.addData();
-
             string runWhile = "y";
             Console.WriteLine("========== Employee Management System ==========");
             while (runWhile =="y") {
@@ -19,10 +18,6 @@ namespace Employee_Management_System
 
                 switch (switchData)
                 {
-                    //case 1:
-                    //    //List<Employee> employees = Employee.addData();
-                    //    break;
-
                     case 1:
                         Employee.displayData(employees);
                         break;
@@ -46,17 +41,11 @@ namespace Employee_Management_System
 
                 Employee.saveTask(employees);
 
-
                 Console.WriteLine("Press See agian (Y/N): ");
                 runWhile = Console.ReadLine();
-
-                
-
+     
             }
             
-            
-
-
         }
     }
 

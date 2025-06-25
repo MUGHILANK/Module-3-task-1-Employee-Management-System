@@ -39,7 +39,6 @@ namespace Employee_Management_System
                         {
                             string line = $"ID: {emp.Id}\nName:  {emp.Name}\nDepartment:  {emp.Department}\nSalary:    {emp.Salary}\nDOJ:  {emp.DateOfjoin}\n\n";
                             sw.WriteLine(line);
-
                         }
                         sw.Close();
                     }
